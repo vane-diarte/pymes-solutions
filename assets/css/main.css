@@ -3085,6 +3085,10 @@ input, select, textarea {
 			top: 0;
 			width: 100%;
 		}
+			#header img {
+				background-color: none;
+
+		}
 
 	body.is-preload #header .inner {
 		-moz-transform: scale(1.05);
@@ -3105,6 +3109,8 @@ input, select, textarea {
 	body.is-preload #header:after {
 		opacity: 1;
 	}
+
+
 /* Nav */
 
 #nav {
