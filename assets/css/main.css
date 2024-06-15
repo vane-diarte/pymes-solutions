@@ -116,7 +116,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			border-bottom-color: transparent !important;
+			border-bottom-color: transparent;
 			color: #6bd4c8;
 		}
 
@@ -3105,7 +3105,101 @@ input, select, textarea {
 	body.is-preload #header:after {
 		opacity: 1;
 	}
+/* Nav */
 
+#nav {
+	background-color: #eeeded;
+	text-align: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 10000;
+	cursor: default;
+	height: 3.5em;
+	line-height: 3.5em;
+}
+
+	#nav ul {
+		margin-bottom: 0;
+		list-style: none;
+		padding-left: 0;
+		border: none;
+	}
+
+	#nav li {
+		display: inline-block;
+		padding-left: 0;
+		border: none;
+	}
+
+	#nav a {
+		-moz-transition: background-color .2s ease-in-out;
+		-webkit-transition: background-color .2s ease-in-out;
+		-ms-transition: background-color .2s ease-in-out;
+		transition: background-color .2s ease-in-out;
+		position: relative;
+		display: block;
+		color: #fff;
+		text-decoration: none;
+		outline: 0;
+		font-weight: 600;
+		border-radius: 8px;
+		border-style: none;
+		color: #003366;
+		height: 2.5em;
+		line-height: 2.5em;
+		padding: 0 1.25em;
+	}
+
+		/* Aplica hover a todos los enlaces excepto los que tienen la clase 'logo' */
+		#nav a:not(.logo):hover {
+			color: #fff;
+			background: #b1b1b1;
+		}
+
+		/* Asegura que el logo no tenga efecto hover */
+		#nav a.logo:hover {
+			background: none;
+			color: inherit;
+		}
+		
+
+		
+
+		#nav a.active {
+			background: #b1b1b1;
+		}
+
+			#nav a.active:before {
+				content: '';
+				display: block;
+				position: absolute;
+				bottom: -0.6em;
+				left: 50%;
+				margin-left: -0.75em;
+				border-left: solid 0.75em transparent;
+				border-right: solid 0.75em transparent;
+				border-top: solid 0.6em #282828;
+			}
+		/* Logo */
+		#nav .logo {
+			height: 3.5em; /* Ajusta la altura del logotipo según sea necesario */
+			vertical-align: middle; /* Asegura que el logotipo esté alineado verticalmente */
+			background: none;
+			
+		}
+	
+		#nav .logo {
+			display: inline-block; /* Asegura que el enlace ocupe solo el espacio necesario */
+			
+		}
+		
+		
+		
+		#nav .logo:hover img {
+			filter: none; /* Asegura que no se apliquen filtros de hover */
+		}
 /* Footer */
 
 	#footer {
@@ -3457,6 +3551,8 @@ input, select, textarea {
 				#header br {
 					display: none;
 				}
+
+		
 
 		/* Footer */
 
