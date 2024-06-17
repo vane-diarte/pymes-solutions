@@ -3516,6 +3516,18 @@ input, select, textarea {
 					margin: 2em 0 0 0;
 				}
 
+		/* nav */
+			#nav .container {
+				flex-direction: column;
+			}
+				
+				#nav a:not(.logo) {
+					display: block;
+					width: 100%;
+					text-align: center;
+				}
+				
+
 		/* Footer */
 
 			#footer {
