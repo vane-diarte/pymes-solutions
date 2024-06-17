@@ -18,7 +18,12 @@
 	<body class="is-preload">
 		<!-- Nav -->
 		<nav id="nav">
-			<ul class="container">
+			<div class="menu-toggle" id="mobile-menu">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+			<ul class="container" id="nav-list">
 				<li><a href="#" class="logo"><img src="images/pymes-logo.png" alt="logo" class="logo"></a></li>
 				<li><a href="#">Inicio</a></li>
 				<li><a href="#two">Nosotros</a></li>
@@ -111,7 +116,7 @@
 					<header class="major">
 						<h2>Servicios</h2>
 					</header>
-					<p>Potencia tu negocio con nuestros servicios</p>
+					<p>Conoce nuestros servicios</p>
 					<div class="row gtr-150">
 						<div class="col-4 col-12-medium">
 							<span class="image fit"><img src="images/pic02.jpg" alt="" /></span>
@@ -184,6 +189,21 @@
 			<script>
 				$(document).ready(function() {
 					$('#').scrolly();
+				});
+			</script>
+			<script>
+				document.getElementById('mobile-menu').addEventListener('click', function() {
+					var navList = document.getElementById('nav-list');
+					navList.classList.toggle('active');
+				});
+
+				var navLinks = document.querySelectorAll('#nav-list li a');
+
+				navLinks.forEach(function(link) {
+					link.addEventListener('click', function() {
+						var navList = document.getElementById('nav-list');
+						navList.classList.remove('active');
+					});
 				});
 			</script>
 			
