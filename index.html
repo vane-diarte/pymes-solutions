@@ -92,8 +92,6 @@
 						<div class="col-6 col-12-medium">
 							<ul class="major-icons">
 								<li><span class="icon solid style1 major fa-code"></span></li>
-								<li><span class="icon solid style2 major fa-bolt"></span></li>
-								<li><span class="icon solid style3 major fa-camera-retro"></span></li>
 								<li><span class="icon solid style4 major fa-cog"></span></li>
 								<li><span class="icon solid style5 major fa-desktop"></span></li>
 								<li><span class="icon solid style6 major fa-calendar"></span></li>
@@ -101,12 +99,14 @@
 						</div>
 						<div class="col-6 col-12-medium">
 							<header class="major">
-								<h2>Lorem ipsum dolor adipiscing<br />
-								amet dolor consequat</h2>
+								<h2>Nosotros</h2>
 							</header>
-							<p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac. Adipiscing id accumsan adipiscing ipsum.</p>
-							<p>Blandit faucibus proin. Ac aliquam integer adipiscing enim non praesent vis commodo nunc phasellus cubilia ac risus accumsan. Accumsan blandit. Lobortis phasellus non lobortis dit varius mi varius accumsan lobortis. Blandit ante aliquam lacinia lorem lobortis semper morbi col faucibus vitae integer placerat accumsan orci eu mi odio tempus adipiscing adipiscing adipiscing curae consequat feugiat etiam dolore.</p>
-							<p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac. Adipiscing id accumsan adipiscing ipsum.</p>
+							<p>Somos un equipo dispuesto a impulsar tus proyectos, ofreciendo soluciones integrales que se adaptan a tus necesidades específicas.
+
+							</p>
+
+							<p>En Pymes Solutions, transformamos tus ideas en realidades digitales y visuales. Somos expertos en desarrollo de sitios web, diseño gráfico e investigación de mercado, comprometidos en ayudarte a destacar y crecer en un mundo competitivo.</p>
+							<p>Combinamos la creatividad, la tecnología y el análisis para impulsar tu negocio hacia el éxito. ¡Estamos aquí para ayudarte a alcanzar tus metas!</p>
 						</div>
 					</div>
 				</div>
@@ -190,11 +190,11 @@
 			<script>
 				document.getElementById('mobile-menu').addEventListener('click', function() {
 					var navList = document.getElementById('nav-list');
-					var logo = document.querySelector('.logo img'); // Selecciona el logo
+					var logo = document.querySelector('.logo img'); 
 					
 					navList.classList.toggle('active');
 					
-					// Agrega o quita la clase 'hide-logo' al logo
+					
 					if (navList.classList.contains('active')) {
 						logo.classList.add('hide-logo');
 					} else {
@@ -207,10 +207,10 @@
 				navLinks.forEach(function(link) {
 					link.addEventListener('click', function() {
 						var navList = document.getElementById('nav-list');
-						var logo = document.querySelector('.logo img'); // Selecciona el logo
+						var logo = document.querySelector('.logo img'); 
 						
 						navList.classList.remove('active');
-						logo.classList.remove('hide-logo'); // Asegúrate de mostrar el logo cuando se cierra el menú
+						logo.classList.remove('hide-logo'); 
 					});
 				});
 			</script>
